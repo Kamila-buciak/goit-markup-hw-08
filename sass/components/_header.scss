@@ -1,0 +1,97 @@
+.header {
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+}
+.header_border {
+  border: 1px solid #ececec;
+  margin-bottom: 100px;
+}
+.logo {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.19;
+  color: #000000;
+  text-decoration: none;
+  padding-left: 15px;
+}
+.logo_text_blue {
+  color: $color-blue;
+}
+.navigation {
+  display: flex;
+  list-style-type: none;
+  margin-left: 93px;
+}
+
+.navigation_link {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-decoration: none;
+  color: $color-black;
+  margin-left: 46px;
+  margin-top: 8px;
+  transition-property: color;
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-timing-function;
+}
+.navigation_link:hover,
+.navigation_link:focus {
+  color: $color-blue;
+}
+.navigation-list_item::after {
+  display: block;
+  position: absolute;
+  content: "";
+  background-color: $color-blue;
+  height: 4px;
+  width: 53px;
+  border-radius: 2px;
+  margin-left: 48px;
+  margin-top: 18px;
+}
+.contact {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin-left: 240px;
+}
+
+.contact_list {
+  list-style: none;
+  margin-right: 30px;
+  transition-property: color;
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-timing-function;
+
+  &:hover {
+    color: $color-blue;
+    transition: 250ms;
+  }
+}
+
+.contact_link {
+  color: $color-grey;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  transition-property: color;
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-timing-function;
+
+  &:hover {
+    color: $color-blue;
+  }
+}
+.contact_icon {
+  fill: $color-icon;
+  margin-right: 10px;
+  transition-property: fill;
+}
+
+.contact_link:hover .contact_icon {
+  fill: $color-blue;
+  transition: 250ms;
+}

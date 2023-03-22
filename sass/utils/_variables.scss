@@ -1,0 +1,24 @@
+//text colors
+$color-black: #212121;
+$color-grey: #757575;
+$color-white: #ffffff;
+$color-blue: #2196f3;
+$color-footer: #2f303a;
+$color-icon: #afb1b8;
+$color-border: #f5f4fa;
+$familyRoboto: "Roboto", sans-serif;
+$familyRaleway: "Raleway", sans-serif;
+
+//transition
+$transition-duration: 250ms;
+$transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+@include mq(phone) {
+  width: 448px;
+}
+@include mq(tablet) {
+  width: 720px;
+}
+@include mq(desktop) {
+  width: 1200px;
+}

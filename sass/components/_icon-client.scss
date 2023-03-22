@@ -1,0 +1,28 @@
+.customer {
+  display: inline-block;
+  justify-content: space-between;
+}
+
+.customer_text {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  color: $color-black;
+  text-align: center;
+}
+.customer_icon {
+  margin-top: 40px;
+  border: 1px solid $color-icon;
+  fill: $color-icon;
+  border-radius: 4px;
+  margin-right: 26px;
+  transition-property: border, fill;
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-timing-function;
+
+  &:hover {
+    fill: $color-blue;
+    border: 1px solid $color-blue;
+    cursor: pointer;
+  }
+}

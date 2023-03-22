@@ -1,0 +1,74 @@
+.team {
+  background: $color-border;
+  width: 1600px;
+}
+.team_title {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  padding-top: 94px;
+}
+.team_list {
+  display: flex;
+  list-style: none;
+  margin-left: 90px;
+}
+.team_people {
+  border-color: 1px solid $color-white;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  height: 428px;
+  background: $color-white;
+  text-align: center;
+  margin: 50px 30px 94px;
+}
+
+.team_people h3 {
+  color: $color-black;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+}
+.team_people p {
+  color: $color-grey;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+}
+.our {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 25px;
+  padding-left: 25px;
+  list-style-type: none;
+}
+.our-team {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: $color-white;
+  transition-property: background-color, fill;
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-timing-function;
+
+  &:hover {
+    background-color: $color-blue;
+    cursor: pointer;
+  }
+}
+
+.our-team_icon {
+  fill: $color-icon;
+  width: 30px;
+  height: 30px;
+  margin-top: 5px;
+  padding: 5px;
+  transition-property: fill;
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-timing-function;
+
+  &:hover {
+    fill: $color-white;
+  }
+}
