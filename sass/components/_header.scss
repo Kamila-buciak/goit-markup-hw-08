@@ -2,7 +2,11 @@
   display: flex;
   align-items: center;
   margin-top: 24px;
+  @include mq(phone) {
+    width: 448px;
+  }
 }
+
 .header_border {
   border: 1px solid #ececec;
   margin-bottom: 100px;
