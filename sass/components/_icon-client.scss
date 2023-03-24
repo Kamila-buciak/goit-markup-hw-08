@@ -1,6 +1,12 @@
 .customer {
   display: inline-block;
   justify-content: space-between;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: 15px;
+  }
+  @media screen and (min-width: 480px) and (max-width: 768px) {
+    margin-left: 15px;
+  }
 }
 
 .customer_text {
@@ -9,8 +15,12 @@
   line-height: 42px;
   color: $color-black;
   text-align: center;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 .customer_icon {
+  width: 170px;
   margin-top: 40px;
   border: 1px solid $color-icon;
   fill: $color-icon;
@@ -19,6 +29,10 @@
   transition-property: border, fill;
   transition-duration: $transition-duration;
   transition-timing-function: $transition-timing-function;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-basis: calc((100% - 60px) / 3);
+    width: 226px;
+  }
 
   &:hover {
     fill: $color-blue;

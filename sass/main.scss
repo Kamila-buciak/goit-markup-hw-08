@@ -1,5 +1,5 @@
 @import "./utils/variables";
-@import "./utils/mixin";
+@import "./utils/mixins";
 @import "./components/header";
 @import "./components/main-section";
 @import "./components/icon-text";
@@ -10,13 +10,21 @@
 @import "./components/modal";
 @import "./components/button-navigation";
 @import "./components/picture-text";
-@import "./components/menu";
-
+@import "./components/mobile-phone";
 .container {
   width: 1200px;
   margin: 0 auto;
   min-width: 420px;
   max-width: 1200px;
+  @include mq(phone) {
+    width: 448px;
+  }
+  @include mq(tablet) {
+    width: 768px;
+  }
+  @include mq(desktop) {
+    width: 1200px;
+  }
 }
 section {
   margin-bottom: 94px;

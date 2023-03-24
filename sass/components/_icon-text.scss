@@ -2,9 +2,22 @@
   display: flex;
   padding-right: 30px;
   transition-property: fill;
+  @media screen and (min-width: 480px) and (max-width: 768px) {
+    margin-left: -40px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    height: 429px;
+  }
 }
+
 .future-icon_item {
   display: flex;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+  @media screen and (min-width: 480px) and (max-width: 768px) {
+    display: inline-block;
+  }
 }
 .future-icon_item > li {
   list-style-type: none;
@@ -15,16 +28,30 @@
   background-color: $color-border;
   width: 270px;
   height: 120px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 354px;
+    height: 120px;
+  }
+  @media screen and (min-width: 480px) and (max-width: 768px) {
+    width: 450px;
+    height: 120px;
+  }
 }
 .future-icon_header {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   color: $color-black;
+  @media screen and (min-width: 480px) and (max-width: 768px) {
+    text-align: center;
+  }
 }
 .future-icon_text {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   color: $color-grey;
+  @media screen and (min-width: 480px) and (max-width: 768px) {
+    padding-bottom: 30px;
+  }
 }
