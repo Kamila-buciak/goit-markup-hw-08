@@ -24,9 +24,9 @@
   margin-left: 93px;
   @media screen and (min-width: 480px) and (max-width: 768px) {
     display: none;
-    justify-content: space-between;
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
+    justify-content: space-between;
   }
 }
 
@@ -67,6 +67,7 @@
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: inline-block;
+    flex-direction: column;
   }
 }
 
