@@ -1,11 +1,10 @@
 .customer {
-  display: inline-block;
+  display: flex;
   justify-content: space-between;
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    margin-left: 15px;
-  }
-  @media screen and (min-width: 480px) and (max-width: 768px) {
-    margin-left: 15px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
@@ -15,8 +14,8 @@
   line-height: 42px;
   color: $color-black;
   text-align: center;
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    text-align: center;
+  @media screen and (min-width: 768px) {
+    align-items: center;
   }
 }
 .customer_icon {
@@ -30,8 +29,9 @@
   transition-duration: $transition-duration;
   transition-timing-function: $transition-timing-function;
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    flex-basis: calc((100% - 60px) / 3);
-    width: 226px;
+    width: calc((100% - 30px) / 2);
+    width: 210px;
+    height: 92px;
   }
 
   &:hover {
