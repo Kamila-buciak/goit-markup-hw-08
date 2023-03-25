@@ -2,30 +2,12 @@
   background: $color-border;
   width: 1600px;
   margin: 0 auto;
-  @media screen and (min-width: 480px) and (max-width: 768px) {
-    width: 480px;
-    height: 2761px;
-    margin-top: -90px;
-  }
-
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    flex-basis: calc((100% - 30px) / 2);
-    width: 768px;
-    height: 1285px;
-  }
 }
 .team_title {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   padding-top: 94px;
-  @media screen and (min-width: 480px) and (max-width: 768px) {
-    margin-bottom: -30px;
-    margin-top: -20px;
-  }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    text-align: center;
-  }
 }
 .team_list {
   display: flex;
@@ -47,16 +29,6 @@
   background: $color-white;
   text-align: center;
   margin: 50px 30px 94px;
-  @media screen and (min-width: 480px) and (max-width: 768px) {
-    height: 622px;
-    width: 450px;
-    margin-left: -120px;
-    margin-bottom: -30px;
-  }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    width: 354px;
-    height: 536px;
-  }
 }
 .team_photo {
   @media screen and (min-width: 480px) and (max-width: 768px) {
@@ -100,12 +72,6 @@
     background-color: $color-blue;
     cursor: pointer;
   }
-  @media screen and (min-width: 480px) and (max-width: 768px) {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 60px;
-    padding-left: 18px;
-  }
 }
 
 .our-team_icon {
@@ -117,9 +83,6 @@
   transition-property: fill;
   transition-duration: $transition-duration;
   transition-timing-function: $transition-timing-function;
-  @media screen and (min-width: 480px) and (max-width: 768px) {
-    margin-right: px;
-  }
 
   &:hover {
     fill: $color-white;
