@@ -3,21 +3,45 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/wrapper-page.jpg);
+    url(../images/Header-mobile-480x400.jpg);
   width: 1600px;
   height: 600px;
   margin: 0 auto;
   margin-top: -30px;
   margin-bottom: 94px;
-  @media screen and (min-width: 480px) and (max-width: 768px) {
-    background-image: height 400px;
-    margin-top: -30px;
-    margin-bottom: 60px;
-    width: 100%;
+  @media screen and (min-device-pixel-ratio: 2) and (max-width: 768px),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to left,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/Header-mobile-960x800@2x.jpg");
   }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    height: 400px;
-    margin-top: -30px;
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+        to left,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/Header-tablet-800x400.jpg");
+    background-position: initial;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to left,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/Header-tablet-1600x800@2x.jpg");
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1600px;
+    height: 600px;
   }
 }
 .main_section_title {
@@ -27,7 +51,7 @@
   color: $color-white;
   text-align: center;
   padding: 200px 452px 40px 452px;
-  @media screen and (min-width: 480px) and (max-width: 768px) {
+  @media screen and (min-width: 480px) {
     text-align: center;
   }
 }
