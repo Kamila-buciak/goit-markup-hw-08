@@ -1,10 +1,5 @@
 .work {
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    display: none;
-  }
+  display: none;
 }
 .work_title {
   font-size: 36px;
@@ -33,4 +28,9 @@
   font-size: 14px;
   text-align: center;
   padding-top: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .work {
+    display: block;
+  }
 }

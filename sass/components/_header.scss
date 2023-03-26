@@ -13,20 +13,13 @@
   line-height: 1.19;
   color: #000000;
   text-decoration: none;
-  padding-left: 15px;
 }
 .logo_text_blue {
   color: $color-blue;
 }
 .navigation {
-  display: flex;
+  display: none;
   list-style-type: none;
-  margin-left: 93px;
-  @media screen and (min-width: 480px) {
-  }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    justify-content: space-between;
-  }
 }
 
 .navigation_link {
@@ -35,7 +28,7 @@
   line-height: 1.14;
   text-decoration: none;
   color: $color-black;
-  margin-left: 46px;
+  margin-left: 40px;
   margin-top: 8px;
   transition-property: color;
   transition-duration: $transition-duration;
@@ -57,21 +50,13 @@
   margin-top: 18px;
 }
 .contact {
-  display: flex;
+  display: none;
   text-align: center;
   align-items: center;
-  margin-left: 240px;
-  @media screen and (min-width: 480px) {
-  }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    display: inline-block;
-    flex-direction: column;
-  }
 }
 
 .contact_list {
   list-style: none;
-  margin-right: 30px;
   transition-property: color;
   transition-duration: $transition-duration;
   transition-timing-function: $transition-timing-function;
@@ -105,4 +90,29 @@
 .contact_link:hover .contact_icon {
   fill: $color-blue;
   transition: 250ms;
+}
+@media (min-width: 768px) {
+  .navigation {
+    display: flex;
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 70px;
+  }
+}
+@media (min-width: 1200px) {
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    margin-left: 93px;
+  }
+  .contact {
+    display: flex;
+    margin-left: 80px;
+  }
+  .logo {
+    margin-left: 200px;
+  }
 }

@@ -1,25 +1,14 @@
 footer {
   background-color: #2f303a;
-  margin: 0 auto;
 }
-
 .footer_box {
   display: flex;
-}
-
-.footer_date {
-  padding-top: 30px;
-}
-.footer_icons {
-  padding-top: 52px;
-  padding-left: 100px;
-}
-.footer_newsletter {
-  padding-left: 100px;
-  padding-top: 52px;
-}
-.footer_button {
-  padding-top: 106px;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 60px;
+  & > div {
+    padding-top: 60px;
+  }
 }
 
 .footer_text {
@@ -27,6 +16,7 @@ footer {
   font-size: 14px;
   line-height: 16px;
   padding-bottom: 10px;
+  text-align: center;
 }
 .footer_text_white {
   color: $color-white;
@@ -36,21 +26,25 @@ footer {
   font-size: 26px;
   line-height: 31px;
   color: $color-white;
+  text-align: center;
 }
+
 .footer_contact {
   font-size: 14px;
   font-style: normal;
   line-height: 1.71;
   color: $color-grey;
   list-style-type: none;
-  margin-left: -33px;
+  align-items: center;
 }
 .footer_adres {
-  padding-bottom: 9px;
+  padding-bottom: 8px;
 }
 .footer_link {
   color: #ffffff99;
   text-decoration: none;
+  text-align: center;
+  padding-left: 35px;
 }
 .footer_list {
   list-style-type: none;
@@ -73,6 +67,7 @@ footer {
   fill: $color-white;
   display: flex;
   padding: 3px;
+  text-align: center;
 }
 .footer_icon {
   fill: $color-white;
@@ -81,9 +76,9 @@ footer {
   background-color: transparent;
   border: 1px solid #ffffff4d;
   border-radius: 4px;
-  width: 358px;
-  height: 50px;
+  width: 450px;
   padding-left: 10px;
+  margin-bottom: 20px;
 }
 .button_submit {
   text-align: justify;
@@ -96,8 +91,8 @@ footer {
   background-color: #2196f3;
   border-radius: 4px;
   border: #2196f3;
+  margin-left: 125px;
   cursor: pointer;
-  margin-left: 12px;
 }
 .button_icon {
   position: absolute;
@@ -108,4 +103,38 @@ footer {
   color: #fff;
   font-size: 14px;
   padding-bottom: 20px;
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .footer_box {
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .footer_newsletter {
+    text-align: center;
+    margin-left: 130px;
+  }
+  .footer_text {
+    margin-top: -10px;
+  }
+  .button_submit {
+    margin-left: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer_box {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    text-align: left;
+    width: 100%;
+  }
+  .footer_text {
+    text-align: left;
+  }
+  .footer_input {
+    display: flex;
+    width: 358px;
+  }
 }
