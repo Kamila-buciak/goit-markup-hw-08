@@ -46,7 +46,7 @@
     flex-basis: calc((100% - 30px) / 2);
   }
 }
-@media (min-width: 1200px) {
+@media (max-width: 1200px) {
   .future-icon_svg {
     width: 270px;
   }

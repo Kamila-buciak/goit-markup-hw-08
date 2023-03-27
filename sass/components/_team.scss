@@ -1,6 +1,6 @@
 .team {
   background-color: $color-border;
-  display: block;
+  display: flex;
   flex-direction: column;
   text-align: left;
   margin-bottom: 60px;
@@ -15,17 +15,17 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: flex-end;
+  align-items: stretch;
   list-style: none;
 }
 .team_people {
-  border-color: 1px solid $color-white;
+  border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   height: 622px;
   width: 450px;
-  background: $color-white;
+  background-color: $color-white;
   margin-bottom: 30px;
 }
 
@@ -44,7 +44,7 @@
 .our {
   display: flex;
   list-style-type: none;
-  margin-left: 110px;
+  justify-content: center;
 }
 .our-team {
   width: 44px;
@@ -79,6 +79,7 @@
 @media (min-width: 768px) {
   .team {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     width: 768px;
   }
@@ -96,7 +97,20 @@
 @media (min-width: 1200px) {
   .team_list {
     display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
     gap: 30px;
     margin-bottom: 64px;
+    margin: 0 auto;
+  }
+  .team_people {
+    height: 428px;
+    width: 270px;
+  }
+  .team {
+    width: 1600px;
+  }
+  .team_title {
+    margin-bottom: 20px;
   }
 }
