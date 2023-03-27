@@ -18,7 +18,6 @@
   background-color: white;
   transform: translateX(100%);
   transition: transform $transition;
-  font-size: 34px;
   font-weight: 500;
   z-index: 4;
 }
@@ -41,11 +40,11 @@
     padding-bottom: 32px;
   }
 }
-.contact__mobile--phone {
+.contact-mobile_phone {
   font-size: 34px;
   color: $color-blue;
 }
-.contact__mobile--mail {
+.contact-mobile_mail {
   display: inline-block;
   font-size: 24px;
   margin-bottom: 64px;
@@ -56,8 +55,13 @@ li {
 a {
   text-decoration: none;
 }
+.nav_link {
+  font-size: 40px;
+  color: #212121;
+}
 .menu-container__link {
-  font-size: 34px;
+  text-decoration: none;
+  font-size: 18px;
   color: $color-blue;
   padding-right: 10px;
   padding-left: 10px;
