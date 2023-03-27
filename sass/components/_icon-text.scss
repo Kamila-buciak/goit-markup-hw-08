@@ -1,10 +1,10 @@
 .future-icon {
   transition-property: fill;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .future-icon_item {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 .future-icon_item > li {
