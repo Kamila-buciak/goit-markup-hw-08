@@ -4,7 +4,7 @@ footer {
 }
 .footer_box {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   text-align: center;
   padding-bottom: 60px;
@@ -64,7 +64,6 @@ footer {
   fill: $color-white;
   display: flex;
   padding: 3px;
-  text-align: center;
 }
 .footer_icon {
   fill: $color-white;
@@ -121,16 +120,18 @@ footer {
   .footer_box {
     display: flex;
     justify-content: space-between;
+    text-align: left;
+
     width: 100%;
   }
   .footer_text {
-    text-align: center;
+    text-align: left;
   }
   .footer_input {
     display: flex;
     width: 358px;
   }
-  .footer_button {
-    display: inline-block;
+  .footer_logo {
+    text-align: left;
   }
 }
