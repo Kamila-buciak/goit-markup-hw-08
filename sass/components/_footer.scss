@@ -1,10 +1,12 @@
 footer {
   background-color: #2f303a;
+  width: 100%;
 }
 .footer_box {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   padding-bottom: 60px;
   & > div {
     padding-top: 60px;
@@ -16,7 +18,6 @@ footer {
   font-size: 14px;
   line-height: 16px;
   padding-bottom: 10px;
-  text-align: center;
 }
 .footer_text_white {
   color: $color-white;
@@ -43,8 +44,6 @@ footer {
 .footer_link {
   color: #ffffff99;
   text-decoration: none;
-  text-align: center;
-  padding-left: 35px;
 }
 .footer_list {
   list-style-type: none;
@@ -91,7 +90,6 @@ footer {
   background-color: #2196f3;
   border-radius: 4px;
   border: #2196f3;
-  margin-left: 125px;
   cursor: pointer;
 }
 .button_icon {
@@ -127,11 +125,11 @@ footer {
     flex-direction: row;
     align-items: baseline;
     justify-content: space-between;
-    text-align: left;
+
     width: 100%;
   }
   .footer_text {
-    text-align: left;
+    text-align: center;
   }
   .footer_input {
     display: flex;

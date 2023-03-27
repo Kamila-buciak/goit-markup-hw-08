@@ -4,6 +4,9 @@
   @media screen and (min-width: 1200px) {
     display: none;
   }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 .menu-container {
   position: fixed;
@@ -30,11 +33,16 @@
   border: none;
   align-self: flex-end;
 }
+@media (min-width: 768px) {
+  .js-open-menu {
+    display: none;
+  }
+}
 .list__navbar--mobile {
   display: flex;
   flex-direction: column;
   padding-left: 0;
-  margin: 0;
+  margin-bottom: 302px;
   > li {
     padding-bottom: 32px;
   }
