@@ -8,9 +8,7 @@ footer {
   align-items: center;
   text-align: center;
   padding-bottom: 60px;
-  & > div {
-    padding-top: 60px;
-  }
+  padding-top: 60px;
 }
 
 .footer_text {
@@ -110,7 +108,7 @@ footer {
   }
   .footer_newsletter {
     text-align: center;
-    margin-left: 130px;
+    margin-left: 80px;
   }
   .footer_text {
     margin-top: -10px;
@@ -122,10 +120,7 @@ footer {
 @media screen and (min-width: 1200px) {
   .footer_box {
     display: flex;
-    flex-direction: row;
-    align-items: baseline;
     justify-content: space-between;
-
     width: 100%;
   }
   .footer_text {
@@ -134,5 +129,8 @@ footer {
   .footer_input {
     display: flex;
     width: 358px;
+  }
+  .footer_button {
+    display: inline-block;
   }
 }
