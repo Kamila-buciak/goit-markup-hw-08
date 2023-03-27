@@ -20,6 +20,13 @@
   width: 528px;
   height: 581px;
   background-color: $color-white;
+
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+  }
 }
 .close_svg:hover,
 .close_svg:focus {
