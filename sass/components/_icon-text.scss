@@ -4,6 +4,7 @@
 
 .future-icon_item {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
 }
 .future-icon_item > li {
@@ -46,12 +47,5 @@
 @media (max-width: 1200px) {
   .future-icon_svg {
     width: 270px;
-  }
-  .future-icon_item {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    gap: 30px;
-    margin-left: 0;
   }
 }

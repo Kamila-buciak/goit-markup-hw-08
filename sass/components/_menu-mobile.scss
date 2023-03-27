@@ -9,7 +9,7 @@
   }
 }
 .menu-container {
-  position: fixed;
+  position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -32,6 +32,9 @@
   background-color: white;
   border: none;
   align-self: flex-end;
+  &:hover {
+    color: $color-blue;
+  }
 }
 @media (min-width: 768px) {
   .js-open-menu {
