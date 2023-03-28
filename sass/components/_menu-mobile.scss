@@ -1,6 +1,7 @@
 .container-mobile {
   display: flex;
   flex-direction: column;
+  transform: translatex(0%);
   @media screen and (min-width: 1200px) {
     display: none;
   }
