@@ -3,7 +3,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/header-mobile-480x400.jpg);
+    url(../images/header-1.jpg);
   width: 100%;
   height: 400px;
   background-repeat: no-repeat;
@@ -18,11 +18,7 @@
   screen and (max-width: 767px) and (min-resolution: 192dpi),
   screen and (max-width: 767px) and (min-resolution: 2dppx) {
   .main_section {
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../images/header@2x.jpg);
+    background-image: url(../images/header@2x.jpg);
     background-size: cover;
   }
 }
@@ -71,6 +67,7 @@
       url(../images/header-desktop-1600x800@2x.jpg);
     height: 800px;
     margin-bottom: 94px;
+    width: 100%;
   }
   .main_section_title {
     font-size: 44px;
