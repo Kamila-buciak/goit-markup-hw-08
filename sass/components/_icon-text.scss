@@ -4,7 +4,6 @@
 
 .future-icon_item {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
@@ -42,6 +41,18 @@
   .future-icon_header {
     text-align: left;
   }
+  .future-icon_list {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 @media (max-width: 1200px) {
+  .future-icon_item {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 30px;
+  }
+  .future-icon_svg {
+    width: 270px;
+  }
 }
