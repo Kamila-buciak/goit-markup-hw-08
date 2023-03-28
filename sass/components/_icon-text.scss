@@ -38,20 +38,16 @@
     flex-wrap: wrap;
     flex-direction: row;
   }
-
+  .future-icon_item li {
+    width: calc((100% - 30px) / 2);
+  }
   .future-icon_header {
     text-align: left;
   }
-  .future-icon_list {
-    display: flex;
-    flex-wrap: wrap;
+  .future-icon_text {
+    text-align: left;
   }
-}
-@media (max-width: 1200px) {
-  .future-icon_item {
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 30px;
-    padding-bottom: 64px;
+  .future-icon_svg {
+    width: 354px;
   }
 }
