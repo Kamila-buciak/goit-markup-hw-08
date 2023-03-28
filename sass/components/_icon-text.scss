@@ -37,6 +37,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    gap: 30px;
   }
   .future-icon_item li {
     width: calc((100% - 30px) / 2);
@@ -49,5 +50,13 @@
   }
   .future-icon_svg {
     width: 354px;
+  }
+}
+@media (min-width: 1200px) {
+  .future-icon_item {
+    flex-wrap: nowrap;
+  }
+  .future-icon_svg {
+    width: 270px;
   }
 }
